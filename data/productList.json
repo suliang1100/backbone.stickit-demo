@@ -1,0 +1,29 @@
+{
+  "title": "产品列表",
+  "list": [
+    {
+      "idx" : "1",
+      "name" : "水杯",
+      "type" : "餐具",
+      "description" : "白色玻璃杯，300ml"
+    },
+    {
+      "idx" : "2",
+      "name" : "茶杯",
+      "type" : "杯具",
+      "description" : "白色茶杯，500ml"
+    },
+    {
+      "idx" : "3",
+      "name" : "水壶",
+      "type" : "杯具",
+      "description" : "黑色紫砂壶"
+    },
+    {
+      "idx" : "4",
+      "name" : "筷子",
+      "type" : "餐具",
+      "description" : "象牙筷子"
+    }
+  ]
+}
