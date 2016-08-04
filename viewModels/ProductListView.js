@@ -4,6 +4,10 @@ app.ProductListView = Backbone.View.extend({
         "input.title": "title"
     },
 
+    events:{
+        "click .add-product":"addProduct"
+    },
+
     render: function() {
         this.$el.html(this.template);
         return this;
@@ -22,6 +26,8 @@ app.ProductListView = Backbone.View.extend({
     // 渲染后处理
     afterRender: function(list) {
 
+        this.list = list;
+
         // 处理大视图的数据绑定
         this.stickit(this.model, this.bindings);
 
@@ -32,5 +38,14 @@ app.ProductListView = Backbone.View.extend({
         _.map(this.nestedViews, function(view) {
             view.afterRender();
         });
+    },
+
+    addProduct:function(e){
+        this.list.add({
+            "idx":"",
+            "name":"",
+            "type":"",
+            "description":""
+        })
     }
 });
